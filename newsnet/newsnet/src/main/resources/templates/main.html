@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../static/plugins/elementui/index.css">
+
+</head>
+<body>
+
+<div id="demo">
+    <button @click="test01"> ceshi</button>
+</div>
+
+<script src="../static/plugins/elementui/index.js"></script>
+<script src="../static/js/vue.js"></script>
+</body>
+<script>
+    let vm = new Vue({
+        el: '#demo',
+        data() {
+
+        },
+        methods: {
+            test01() {
+                this.$message.success("chengonel");
+            }
+        },
+    })
+</script>
+</html>
